@@ -1,0 +1,63 @@
+nav{
+    border: 2px solid;
+    height: 80px;
+    display: flex;
+    background-color: black;
+}
+
+nav #logo{
+    /* border: 2px solid red; */
+    height: inherit;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+nav #right{
+     /* border: 2px solid red; */
+     flex-basis: 50%;
+     height: inherit;
+     color: white;
+     font-size: 20px;
+     text-transform: capitalize;
+}
+nav #right ul{
+    display: flex;
+    justify-content: space-around;
+}
+nav #right ul a{
+    text-decoration: none;
+    color: white;
+}
+nav #right ul a li{
+    list-style-type: none;
+}
+nav #right ul a li:hover{
+    text-decoration: underline rgb(242, 10, 122);
+}
+
+nav #left{
+    margin-left: 20px;
+    /* border: 2px solid red; */
+    flex-basis: 40%;
+    height: inherit;
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+nav #left a ,nav #left a {
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+}
+nav #left a #contact,nav #left a #tcs{
+    text-transform: uppercase;
+    /* text-decoration: none; */
+    /* color: white; */
+}
+nav #left #contact:hover{
+    text-decoration: underline;
+}
+nav #left #tcs:hover{
+    text-decoration: underline;
+}

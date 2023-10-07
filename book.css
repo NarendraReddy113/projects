@@ -1,0 +1,143 @@
+nav{
+    /* border: 2px solid; */
+    height: 70px;
+    display: flex;
+    background-color: rgb(92, 89, 89);
+}
+nav #left{
+    /* border: 2px solid red; */
+    flex-basis: 20%;
+    height: inherit;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+img{
+    height: inherit;
+    width: 250px;
+    flex-basis: 20%;
+    text-align: center;
+    margin-left: 250px;
+}
+nav #center{
+    /* border: 2px solid red; */
+    flex-basis: 80%;
+    height: inherit;
+    color: white;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+input[type="search"]{
+    padding: 10px;
+    padding-right: 450px;
+    margin-top: 15px;
+    margin-left: 60px;
+}
+
+nav #right{
+    /* border: 2px solid red; */
+    flex-basis: 50%;
+    height: inherit;
+    color: white;
+    font-size: 10px;
+    text-transform: capitalize;
+}
+select{
+    padding: 8px;
+    background-color: rgb(92, 89, 89);
+    color: white;
+    font-weight: bold;
+    margin-top: 15px;
+    border: none;
+}
+button{
+    background-color: red;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-left: 20px;
+}
+a{
+    margin-left: 20px;
+    height: 160px;
+    /* padding: 100px; */
+}
+#second{
+    /* border: 1px solid; */
+    height: 50px;
+    display: flex;
+    background-color: rgb(25, 18, 63);
+}
+nav #l{
+    /* border: 2px solid red; */
+    flex-basis: 40%;
+    height: inherit;
+    text-transform: capitalize;
+    margin-top: 2px;
+    margin-left: 180px;
+}
+nav #l ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav #l ul a{
+    text-decoration: none;
+}
+nav #l ul a li{
+    list-style-type: none;
+    color: white;
+}
+nav #l ul a li:hover{
+    color: red;
+}
+nav #l ul a li sup{
+    font-size: small;
+}
+c{
+   margin-top: 15px;
+   margin-right: 150px; 
+}
+nav #r{
+    /* border: 2px solid red; */
+    flex-basis: 30%;
+    height: inherit;
+    text-transform: capitalize;
+    margin-top: 2px;
+    margin-left: 180px;
+}
+nav #r ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+nav #r ul a{
+    text-decoration: none;
+}
+nav #r ul a li{
+    list-style-type: none;
+    color: white;
+}
+
+section{
+    background-image: url(https://assets-in.bmscdn.com/promotions/cms/creatives/1693472198837_iccdesktop.jpg);
+}
+
+.im{
+    border-radius: 10px;
+    height: 200px;
+}
+span{
+    color: brown;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 10px;
+    margin-left: 150px;
+}
+main{
+    display: flex;
+    
+}
+main #a{
+    align-items: flex-start;
+}
