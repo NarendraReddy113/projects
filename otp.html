@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: burlywood;
+        }
+        h1{
+            color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-style: italic;
+        }
+        button{
+            color: black;
+            background-color: chartreuse;
+            margin-left: 800px;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="head"> LET'S GENERATOR OTP </h1>
+    <button onclick="generate()">GENERATE</button>
+
+    <script>
+        function generate(){
+            var num="QSPT13"
+            var otp=""
+            for(let i=0;i<=6;i++){
+                otp+=num[Math.floor(Math.random()*num.length)];
+            }
+            alert(`The OTP will valid for 30 sec only ${otp}`)
+            // console.log(`The OTP will valid for 30 sec only ${otp}`);
+
+            document.getElementById("head").style.color="blue"
+            document.querySelector("button").style.background="red"
+            
+
+
+        }
+        
+    </script>
+</body>
+</html>
