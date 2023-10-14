@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+    <style>
+        body{
+            background-color: lightblue;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            
+            
+        }
+        h1{
+            font-weight: bold;
+            font-style: italic;
+            color: tomato;
+        }
+        input{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        /* input:hover{
+            background-color: chartreuse; */
+        /* } */
+        button{
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+        button:hover{
+            background-color: chocolate;
+        }
+        li button{
+            background-color: red;
+            border-radius: 10px;
+            margin-left: 20px;
+        }
+        li{
+            
+            list-style-type: none;
+        }
+        span{
+            border: 2px solid black;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            background-color:orange;
+        }
+    </style>
+</head>
+<body>
+    
+    <h1>MY SHOPPING LIST</h1>
+    <div>
+        <input type="text" name="item"  id="item" placeholder="Enter a new item">
+        <button>Add item</button>
+    </div>
+        <ul>
+
+        </ul>
+
+    <script>
+        let list=document.querySelector("ul")
+        let input=document.querySelector("#item")
+        let add=document.querySelector("button")
+
+        add.addEventListener("click",()=>{
+          let item=input.value;
+          console.log(item);
+          let listItem=document.createElement("li")
+          let span=document.createElement("span")
+          let deleteBtn=document.createElement("button")
+
+          deleteBtn.textContent="Delete"
+          listItem.append(span)
+          span.innerHTML=item;
+          list.appendChild(listItem)
+          item.value=""
+          listItem.appendChild(deleteBtn)
+
+          deleteBtn.addEventListener("click",()=>{
+            listItem.remove()
+          })
+
+          document.body.appendChild(listItem)
+          
+        })
+
+    </script>
+</body>
+</html>
