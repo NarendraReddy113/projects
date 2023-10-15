@@ -6,12 +6,19 @@
     <title>Document</title>
     <style>
         body{
-            background-color: burlywood;
+            /* background-color: burlywood; */
+            background-color: tan;
             border: 2px solid;
             height: 400px;
             width: 500px;
             margin: auto;
-            margin-top: 30px;
+            margin-top: 130px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+            
         }
         h1{
             color: black;
@@ -24,11 +31,9 @@
         button{
             color: black;
             background-color: chartreuse;
-            margin-left: 180px;
-           
             border: 2px solid black;
             border-radius: 10px;
-            padding: 20px;
+            padding: 10px;
             font-weight: bold;
         }
     </style>
@@ -39,9 +44,9 @@
 
     <script>
         function generate(){
-            var num="QPT13"
+            var num="Q1P2T"
             var otp=""
-            for(let i=0;i<=4;i++){
+            for(let i=0;i<=5;i++){
                 otp+=num[Math.floor(Math.random()*num.length)];
             }
             alert(`The OTP will valid for 30 sec only ${otp}`)
@@ -49,13 +54,10 @@
 
             document.getElementById("head").style.color="blue"
             document.querySelector("button").style.background="red"
-            document.body.style.background="yellow"
+            document.body.style.background="yellowgreen"
             document.body.style.border="2px solid black"
             
-            document.body.style.height= "400px";
-            document.body.style
-            document.body.style
-            document.body.style
+           
             
             
 
