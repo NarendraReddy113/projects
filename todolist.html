@@ -11,12 +11,22 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
-            
+            /* position: relative; */
         }
+        /* main{
+            height: 500px;
+            width: 500px;
+            border: 2px solid red;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: absolute;
+            top: 100px;
+        } */
         h1{
+            margin-left: 50px;
             font-weight: bold;
-            font-style: italic;
+            /* font-style: italic; */
             color: tomato;
         }
         input{
@@ -42,21 +52,22 @@
             margin-left: 20px;
         }
         li{
-            
+            margin-bottom: 10px;
             list-style-type: none;
         }
         span{
             border: 2px solid black;
             border: none;
-            padding: 10px;
+            padding: 5px;
             border-radius: 10px;
             background-color:orange;
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
-    
-    <h1>MY SHOPPING LIST</h1>
+    <main>
+    <h1>TODO List</h1>
     <div>
         <input type="text" name="item"  id="item" placeholder="Enter a new item">
         <button>Add item</button>
@@ -64,7 +75,7 @@
         <ul>
 
         </ul>
-
+    </main>
     <script>
         let list=document.querySelector("ul")
         let input=document.querySelector("#item")
@@ -89,7 +100,9 @@
           })
 
           document.body.appendChild(listItem)
-          
+          deleteBtn.style.padding="5px";
+          deleteBtn.style.marginBottom="10px";
+
         })
 
     </script>
