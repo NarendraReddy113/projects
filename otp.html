@@ -6,8 +6,7 @@
     <title>Document</title>
     <style>
         body{
-            /* background-color: burlywood; */
-            background-color: tan;
+            background-image: linear-gradient(to right, green,yellowgreen,blue,orange,gold);
             border: 2px solid;
             height: 400px;
             width: 500px;
@@ -20,6 +19,17 @@
             border-radius: 20px;
             
         }
+        section{
+            background-color: tan;
+            height: 400px;
+            width: 500px;
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
         h1{
             color: black;
             display: flex;
@@ -30,7 +40,7 @@
         }
         button{
             color: black;
-            background-color: chartreuse;
+            background-color: ;
             border: 2px solid black;
             border-radius: 10px;
             padding: 10px;
@@ -39,9 +49,10 @@
     </style>
 </head>
 <body>
+    <section>
     <h1 id="head"> LET'S GENERATOR OTP </h1>
     <button onclick="generate()">GENERATE</button>
-
+</section>
     <script>
         function generate(){
             var num="Q1P2T"
@@ -53,8 +64,8 @@
             // console.log(`The OTP will valid for 30 sec only ${otp}`);
 
             document.getElementById("head").style.color="blue"
-            document.querySelector("button").style.background="red"
-            document.body.style.background="yellowgreen"
+            document.querySelector("button").style.backgroundImage="linear-gradient(gold,orange)"
+            document.body.style.background="linear-gradient(to right, green,yellowgreen,blue,orange,gold)"
             document.body.style.border="2px solid black"
             
            
